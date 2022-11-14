@@ -1,0 +1,192 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONT AWESOME ICON */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+/* FONT BOOTSTRAP ICON */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css');
+
+/* FONT PLAYFAIR */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.font-playfair {
+    font-family: 'Playfair Display', serif!important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #696cff;
+}
+
+/* SETTING */
+h1,h2,h3,h4,h5,h6,p,span,a,div,button,label {
+    font-family: 'Poppins', sans-serif!important;
+    /* letter-spacing: 0.3px!important; */
+}
+
+input[name="username"] {
+    text-transform: lowercase;
+}
+
+img, video, iframe {
+    border-radius: 0.25rem;
+    /* pointer-events: none; */
+}
+a {
+    text-decoration: none;
+}
+
+/* IMAGE STYLE */
+.img-style {
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position-y: center!important;
+    background-position-x: center!important;
+    object-fit: cover!important;
+}
+.img-20 {
+    width: 20px!important;
+    height: 20px!important;
+}
+.img-25 {
+    width: 25px!important;
+    height: 25px!important;
+}
+.img-30 {
+    width: 30px!important;
+    height: 30px!important;
+}
+.img-40 {
+    width: 40px!important;
+    height: 40px!important;
+}
+.img-50 {
+    width: 50px!important;
+    height: 50px!important;
+}
+.img-60 {
+    width: 60px!important;
+    height: 60px!important;
+}
+.img-70 {
+    width: 70px!important;
+    height: 70px!important;
+}
+.img-80 {
+    width: 80px!important;
+    height: 80px!important;
+}
+.img-100 {
+    width: 100px!important;
+    height: 100px!important;
+}
+.img-150 {
+    width: 150px!important;
+    height: 150px!important;
+}
+.img-100-50 {
+    width: 100px!important;
+    height: 50px!important;
+}
+.img-200-100 {
+    width: 200px!important;
+    height: 100px!important;
+}
+.img-300-100 {
+    width: 300px!important;
+    height: 100px!important;
+}
+.img-300-150 {
+    width: 300px!important;
+    height: 150px!important;
+}
+.img-300-200 {
+    width: 300px!important;
+    height: 200px!important;
+}
+
+/* FONT WEIGHT */
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+/* FONT-SIZE */
+.fs-12 { font-size: 12px; } .fs-14 { font-size: 14px; } .fs-16 { font-size: 16px; } .fs-18 { font-size: 18px; } .fs-20 { font-size: 20px; } .fs-22 { font-size: 22px; } .fs-24 { font-size: 24px; } .fs-26 { font-size: 26px; } .fs-28 { font-size: 28px; } .fs-30 { font-size: 30px; } .fs-32 { font-size: 32px; } .fs-34 { font-size: 34px; } .fs-36 { font-size: 36px; } .fs-38 { font-size: 38px; } .fs-40 { font-size: 40px; } .fs-42 { font-size: 42px; } .fs-44 { font-size: 44px; } .fs-46 { font-size: 46px; } .fs-48 { font-size: 48px; } .fs-50 { font-size: 50px; } .fs-52 { font-size: 52px; } .fs-54 { font-size: 54px; } .fs-56 { font-size: 56px; } .fs-58 { font-size: 58px; } .fs-60 { font-size: 60px; } .fs-62 { font-size: 62px; } .fs-64 { font-size: 64px; } .fs-66 { font-size: 66px; } .fs-68 { font-size: 68px; } .fs-70 { font-size: 70px; } .fs-72 { font-size: 72px; } .fs-74 { font-size: 74px; } .fs-76 { font-size: 76px; } .fs-78 { font-size: 78px; } .fs-80 { font-size: 80px; } .fs-82 { font-size: 82px; } .fs-84 { font-size: 84px; } .fs-86 { font-size: 86px; } .fs-88 { font-size: 88px; } .fs-90 { font-size: 90px; } .fs-92 { font-size: 92px; } .fs-94 { font-size: 94px; } .fs-96 { font-size: 96px; } .fs-98 { font-size: 98px; } .fs-100 { font-size: 100px; }
+
+/* WIDTH */
+.w-80 {
+    width: 80%;
+}
+
+
+/* MEDIA */
+@media (max-width: 576px) { 
+    .w-50 {
+        width:100%!important;
+    }
+    .px-2-mobile {
+        padding-right: .5rem!important;
+        padding-left: .5rem!important;
+    }
+    .fs-50 {
+        font-size: 30px;
+    }
+    .fs-30 {
+        font-size: 26px;
+    }
+    .fs-24 {
+        font-size: 20px;
+    }
+    .fs-20 {
+        font-size: 16px;
+    }
+ }
+
+.div-relative{
+    position:relative;
+}
+
+/* DARK HOVER */
+.dark-hover{
+    background-color: #000;
+    border-radius: 0.25rem;
+}
+.dark-hover img {
+    display: block;
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.dark-hover img:hover {
+	opacity: .5;
+}
+
+
+
+
+
+
+
+
+
