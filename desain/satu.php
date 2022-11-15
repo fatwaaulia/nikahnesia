@@ -380,8 +380,133 @@
                     <p>How it all started</p>
                 </div>
             </div>
+
+            <!-- CAROUSEL -->
+    <link rel="stylesheet" href="<?= '../assets/css/owl.carousel.min.css' ?>">
+    <link rel="stylesheet" href="<?= '../assets/css/owl.theme.default.css' ?>">
+    <script src="<?= '../assets/js/owl.carousel.min.js' ?>"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+        
+        
+<div class="row mt-5">
+  <div class="col-lg-12">
+
+    <div class="horizontal-timeline">
+        <ul class="list-inline items">
+            <?php 
+            $love_story = [
+                [
+                    'tanggal' => '01 Januari 2019',
+                    'img' => 'beautiful-couple-having-their-wedding-beach-2-13.jpeg',
+                    'judul' => 'Awal Bertemu',
+                    'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                ],
+                [
+                    'tanggal' => '02 Februari 2020',
+                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                    'judul' => 'Meminta Restu Orang Tua',
+                    'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                ],
+                [
+                    'tanggal' => '03 Maret 2021',
+                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                    'judul' => 'Lamaran',
+                    'deskripsi' => 'Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                ],
+                [
+                    'tanggal' => '04 Juni 2022',
+                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                    'judul' => 'Akad Nikah',
+                    'deskripsi' => 'Lorem ipsum dolor sit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                ],
+            ];
+            
+            foreach ($love_story as $v) : 
+            ?>
+            <li class="list-inline-item items-list">
+                <div class="px-4">
+                    <div class="event-date badge" style="background:#9b8770"><?= $v['tanggal'] ?></div>
+                    <div class="card text-white p-2" style="background-color:#c2ad93">
+                        <img src="<?= '../assets/img/'.$v['img'] ?>" class="img-style w-100" style="height:10vw" alt="">
+                        <h5 class="pt-2"><?= $v['judul'] ?></h5>
+                        <span><?= $v['deskripsi'] ?></span>
+                    </div>
+                </div>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+  </div>
+</div>
+
+
         </div>
     </div>
+
+    <style>
+.horizontal-timeline .items {
+  border-top: 3px solid #e9ecef;
+}
+
+.horizontal-timeline .items .items-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+
+.horizontal-timeline .items .items-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 8px;
+}
+
+@media (min-width: 1140px) {
+  .horizontal-timeline .items .items-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+    top: -40px;
+  }
+}
+    </style>
+
+
     <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
         <div class="container">
             <div class="row">
@@ -402,23 +527,23 @@
                 <?php
                     $gallery = [
                         [
-                            'name' => 'beautiful-couple-having-their-wedding-beach-2-13.jpeg',
+                            'img' => 'beautiful-couple-having-their-wedding-beach-2-13.jpeg',
                         ],
                         [
-                            'name' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                            'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
                         ],
                         [
-                            'name' => 'beautiful-couple-having-their-wedding-beach-1-7.jpeg',
+                            'img' => 'beautiful-couple-having-their-wedding-beach-1-7.jpeg',
                         ],
                         [
-                            'name' => 'beautiful-couple-having-their-wedding-beach-4-3.jpeg',
+                            'img' => 'beautiful-couple-having-their-wedding-beach-4-3.jpeg',
                         ],
                     ];
                 ?>
                 <?php foreach($gallery as $v) : ?>
                     <div class="col-lg-6 col-md-6 col-6">
                         <div class="dark-hover">
-                            <img src="<?= '../assets/img/'.$v['name'] ?>" class="img-style w-100 my-3" style="height:25vw" onclick="openLightbox();toSlide(1)" class="hover-shadow" alt="">
+                            <img src="<?= '../assets/img/'.$v['img'] ?>" class="img-style w-100 my-3 hover-shadow" style="height:25vw" onclick="openLightbox();toSlide(1)" alt="">
                         </div>
                     </div>
                 <?php endforeach; ?>
