@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 
@@ -52,21 +55,7 @@
             color:#fff;
             border:2px solid #fff;
         }
-
-        .center {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        .center-bottom {
-            position: absolute;
-            left: 50%;
-            top: 80%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+        /* END CORE */
         
         .socmed {
             filter: grayscale(100%);
@@ -87,20 +76,28 @@
         //     }
         // }
     ?>
+<script>
+    function open_invitation() {
+        $('#halaman_1').toggleClass('d-block d-none');
+        $('#halaman_2').toggleClass('d-none d-block');
+    }
+</script>
+
+<div id="halaman_1" class="d-none">
 
     <section>
     <div class="container-fluid img-style p-0">
-        <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>)">
+        <div class="img-style vh-100" style="background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
                         <img src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="img-150 img-style rounded-circle mb-4" alt="">
                         <h4 class="mb-3">The Wedding of</h4>
-                        <h1 class="mb-3 fs-50 font-playfair">Romeo & Juliet</h1>
+                        <h1 class="mb-3 fs-50 font-playfair">Aang Muammar Zein & Lufita Sari Dwi Lestari</h1>
                         <p class="mb-3 fs-18">Dear Mr./ Mrs./ Ms.</p>
                         <h3 class="mb-3"><?= $_GET['to']??'Nama Tamu' ?></h3>
                         <p class="mb-4 fs-18">You are cordially invited to our wedding.</p>
-                        <a href="#" class="btn btn-outline-open">Open Invitation</a>
+                        <a href="#" class="btn btn-outline-open" onclick="open_invitation()">Open Invitation</a>
                     </div>
                 </div>
             </div>
@@ -108,9 +105,13 @@
     </div>
     </section>
 
+</div>
+
+<div id="halaman_2" class="d-block position-relative">
+
     <section>
-    <div class="container-fluid img-style p-0 position-relative">
-        <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
+    <div class="container-fluid img-style p-0 position-fixed">
+        <div class="img-style vh-100" style="background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
@@ -124,9 +125,43 @@
     </div>
     </section>
 
+    <section>
+    <div class="vh-100">
+        <!--  -->
+    </div>
+    </section>
+
+    <style>
+        .custom-shape-divider-bottom-1668584614 {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1668584614 svg {
+        position: relative;
+        display: block;
+        width: calc(131% + 1.3px);
+        height: 136px;
+    }
+
+    .custom-shape-divider-bottom-1668584614 .shape-fill {
+        fill: #e1e3e3;
+    }
+    </style>
+    <div class="custom-shape-divider-bottom-1668584614">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
 
     <section id="div-couple">
-    <div class="container-fluid" style="background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
+    <div class="container-fluid position-relative" style="background-color:#e1e3e3;margin-bottom:-85px;padding-bottom:50px">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -135,6 +170,7 @@
                     <p class="fs-18">Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.</p>
                 </div>
             </div>
+
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-4 col-5 text-center position-relative">
                     <div class="row">
@@ -213,9 +249,35 @@
     </div>
     </section>
 
+    <style>
+    .custom-shape-divider-bottom-293874932 {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
 
-    <section id="div-calendar">
-    <div class="container-fluid" style="background-color:#c2ad93;padding-top:100px;padding-bottom:100px">
+    .custom-shape-divider-bottom-293874932 svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 85px;
+    }
+
+    .custom-shape-divider-bottom-293874932 .shape-fill {
+        fill: #C2AD93;
+    }
+    </style>
+    <div class="custom-shape-divider-bottom-293874932">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <section class="position-relative" id="div-calendar">
+    <div class="container-fluid" style="background-color:#c2ad93;padding-top:100px;padding-bottom:100px;margin-bottom:-85px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -247,12 +309,12 @@
                             </div>
                             <div class="card pb-4 border border-0" style="border-radius:300px 300px 200px 200px;">
                                 <div class="card-header mb-3 text-white text-center img-style position-relative" style="border-radius:300px 300px 0 0;height:500px;background: linear-gradient(0deg, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-1-7.jpeg' ?>)">
-                                    <div class="center-bottom">
-                                        <h3 class="fs-30">Where & When</h3>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <h3 class="fs-24">Where & When</h3>
                                         <h1 class="fs-50 font-playfair">Wedding Day</h1>
                                     </div>
                                 </div>
-                                <div class="px-5 px-2-mobile">
+                                <div class="px-lg-5 px-2">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12 col-12 my-3">
                                             <h1 class="font-playfair text-center">Holy Matrimony</h1>
@@ -285,13 +347,17 @@
                                                 </div>
                                                 <div class="row mt-3">
                                                     <div class="col-12 text-center">
-                                                        <a href="#" class="btn-main mb-1 me-2">
-                                                            <i class="fa-solid fa-location-dot"></i>
-                                                            Open Map
+                                                        <a href="#">
+                                                            <button class="btn-main mt-2 me-2">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                Open Map
+                                                            </button>
                                                         </a>
-                                                        <a href="#" class="btn-main mb-1">
-                                                            <i class="fa-solid fa-calendar-days"></i>
-                                                            Add to Calender
+                                                        <a href="#">
+                                                            <button class="btn-main mt-2">
+                                                                <i class="fa-solid fa-calendar-days"></i>
+                                                                Add to Calender
+                                                            </button>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -328,13 +394,17 @@
                                                 </div>
                                                 <div class="row mt-3">
                                                     <div class="col-12 text-center">
-                                                        <a href="#" class="btn-main mb-1 me-2">
-                                                            <i class="fa-solid fa-location-dot"></i>
-                                                            Open Map
+                                                        <a href="#">
+                                                            <button class="btn-main mt-2 me-2">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                Open Map
+                                                            </button>
                                                         </a>
-                                                        <a href="#" class="btn-main mb-1">
-                                                            <i class="fa-solid fa-calendar-days"></i>
-                                                            Add to Calender
+                                                        <a href="#">
+                                                            <button class="btn-main mt-2">
+                                                                <i class="fa-solid fa-calendar-days"></i>
+                                                                Add to Calender
+                                                            </button>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -351,9 +421,11 @@
                                                 </div>
                                             </div>
                                             <p>We will broadcast the wedding ceremony virtually</p>
-                                            <a href="#" class="btn-main mb-1">
-                                                <i class="fa-solid fa-video"></i>
-                                                Join
+                                            <a href="#">
+                                                <button class="btn-main my-2">
+                                                    <i class="fa-solid fa-video"></i>
+                                                    Join
+                                                </button>
                                             </a>
                                         </div>
                                     </div>
@@ -367,7 +439,6 @@
     </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     function makeTimer() {
         //	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
@@ -398,7 +469,6 @@
 
 <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
          <script>
             $(document).ready(function() {
@@ -422,7 +492,34 @@
             })
          </script>
 
-    <section id="div-journey">
+    <style>
+    .custom-shape-divider-bottom-1668598235 {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1668598235 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 84px;
+    }
+
+    .custom-shape-divider-bottom-1668598235 .shape-fill {
+        fill: #D2B591;
+    }
+    </style>
+    <div class="custom-shape-divider-bottom-1668598235">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <section class="position-relative" id="div-journey">
     <div class="container-fluid" style="background-color:#d2b591;padding-top:100px;padding-bottom:100px">
         <div class="container">
             <div class="row">
@@ -493,8 +590,8 @@
 
 
 
-    <section id="div-gallery">
-    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
+    <section class="position-relative" id="div-gallery">
+    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>);margin-bottom:-85px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -528,7 +625,7 @@
                     ];
                 ?>
                 <?php foreach($gallery as $v) : ?>
-                    <div class="col-lg-6 col-md-6 col-6">
+                    <div class="col-lg-6 col-md-6 col-6" style="margin-right:-5px;margin-left:-5px">
                         <div class="dark-hover">
                             <img src="<?= '../assets/img/'.$v['img'] ?>" class="img-style w-100 my-3 hover-shadow" style="height:25vw" onclick="openLightbox();toSlide(1)" alt="">
                         </div>
@@ -540,9 +637,34 @@
 
     </section>
 
+    <style>
+    .custom-shape-divider-bottom-1668597604 {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
 
+    .custom-shape-divider-bottom-1668597604 svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 85px;
+    }
 
-    <section>
+    .custom-shape-divider-bottom-1668597604 .shape-fill {
+        fill: #d2b591;
+    }
+    </style>
+    <div class="custom-shape-divider-bottom-1668597604">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <section class="position-relative">
     <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-color:#d2b591">
         <div class="container">
             <div class="row">
@@ -584,8 +706,8 @@
     </section>
 
 
-    <section id="div-rsvp">
-    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
+    <section class="position-relative" id="div-rsvp">
+    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>);margin-bottom:-85px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -603,8 +725,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="kehadiran" class="form-label">Kehadiran</label>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" name="kehadiran" role="switch" id="kehadiran" checked onclick="validate()">
+                                <div class="form-check form-switch ps-5">
+                                    <input class="form-check-input me-3" type="checkbox" name="kehadiran" role="switch" id="kehadiran" checked onclick="validate()" style="transform: scale(1.5);">
                                     <label class="form-check-label" for="kehadiran" id="statusKehadiran">Hadir</label>
                                 </div>
                                 <script>
@@ -676,8 +798,34 @@
     </div>
     </section>
 
+    <style>
+    .custom-shape-divider-bottom-1668602577 {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
 
-    <section id="div-gift">
+    .custom-shape-divider-bottom-1668602577 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+
+    .custom-shape-divider-bottom-1668602577 .shape-fill {
+        fill: #D2B591;
+    }
+    </style>
+    <div class="custom-shape-divider-bottom-1668602577">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <section class="position-relative" id="div-gift">
     <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-color:#d2b591">
         <div class="container">
             <div class="row">
@@ -726,7 +874,7 @@
     
     <section>
     <div class="container-fluid img-style p-0 position-relative">
-        <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
+        <div class="img-style vh-100" style="background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
@@ -746,6 +894,8 @@
         </div>    
     </div>
     </section>
+
+</div>
 
 
 

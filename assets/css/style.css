@@ -124,10 +124,6 @@ a {
     .w-50 {
         width:100%!important;
     }
-    .px-2-mobile {
-        padding-right: .5rem!important;
-        padding-left: .5rem!important;
-    }
     .fs-50 {
         font-size: 30px;
     }
@@ -140,10 +136,6 @@ a {
     .fs-20 {
         font-size: 16px;
     }
- }
-
-.div-relative{
-    position:relative;
 }
 
 /* DARK HOVER */
