@@ -14,18 +14,32 @@
 <body>
 
     <style>
-        .btn-open {
-            background-color:#000;
+        .form-control:focus, .form-check-input:focus {
+            border-color: #9b8770;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(194, 173, 147, 0.6);
+        }
+
+        /* CORE */
+        .c-main {
+            color: #9b8770!important;
+        }
+        .bg-main {
+            background-color: #9b8770!important;
+        }
+
+        .btn-main {
+            background-color:#9b8770;
             color:#fff;
             border-radius:50px;
-            border:2px solid #fff;
-            padding: 10px 20px;
+            border:2px solid #9b8770;
+            padding: 8px 24px;
         }
-        .btn-open:hover {
-            background-color:#fff;
-            color:#000;
-            border:2px solid #000;
+        .btn-main:hover {
+            background-color:#c2ad93;
+            color:#fff;
+            border:2px solid #9b8770;
         }
+
         .btn-outline-open {
             background-color:#fff;
             color:#000;
@@ -74,11 +88,12 @@
         // }
     ?>
 
+    <section>
     <div class="container-fluid img-style p-0">
         <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>)">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center text-white center">
+                    <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
                         <img src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="img-150 img-style rounded-circle mb-4" alt="">
                         <h4 class="mb-3">The Wedding of</h4>
                         <h1 class="mb-3 fs-50 font-playfair">Romeo & Juliet</h1>
@@ -91,12 +106,14 @@
             </div>
         </div>    
     </div>
+    </section>
 
-    <div class="container-fluid img-style p-0 div-relative">
+    <section>
+    <div class="container-fluid img-style p-0 position-relative">
         <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center text-white center">
+                    <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
                         <h4 class="mb-5">The Wedding of</h4>
                         <h1 class="mb-3 fs-70 font-playfair">Romeo & Juliet</h1>
                         <p class="mb-3 fs-40 font-playfair">13 November 2022</p>
@@ -105,6 +122,10 @@
             </div>
         </div>    
     </div>
+    </section>
+
+
+    <section id="div-couple">
     <div class="container-fluid" style="background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
         <div class="container py-5">
             <div class="row">
@@ -115,7 +136,7 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-4 col-5 text-center div-relative">
+                <div class="col-lg-4 col-md-4 col-5 text-center position-relative">
                     <div class="row">
                         <div class="col-lg-12">
                             <img class="w-75 rounded-circle" style="margin-top:10%" src="<?= '../assets/img/man.png' ?>">
@@ -125,10 +146,10 @@
                         </div>
                     </div>
                 </div> 
-                <div class="col-lg-4 col-md-4 col-2 text-center div-relative">
-                    <h1 class="font-playfair center fs-50">&</h1>
+                <div class="col-lg-4 col-md-4 col-2 text-center position-relative">
+                    <h1 class="font-playfair position-absolute top-50 start-50 translate-middle fs-50">&</h1>
                 </div> 
-                <div class="col-lg-4 col-md-4 col-5 text-center div-relative">
+                <div class="col-lg-4 col-md-4 col-5 text-center position-relative">
                     <div class="row">
                         <div class="col-lg-12">
                             <img class="w-75 rounded-circle" style="margin-top:10%" src="<?= '../assets/img/woman.png' ?>">
@@ -190,7 +211,10 @@
             </div>
         </div>
     </div>
+    </section>
 
+
+    <section id="div-calendar">
     <div class="container-fluid" style="background-color:#c2ad93;padding-top:100px;padding-bottom:100px">
         <div class="container">
             <div class="row">
@@ -222,7 +246,7 @@
                                 </div>
                             </div>
                             <div class="card pb-4 border border-0" style="border-radius:300px 300px 200px 200px;">
-                                <div class="card-header mb-3 text-white text-center img-style div-relative" style="border-radius:300px 300px 0 0;height:500px;background: linear-gradient(0deg, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-1-7.jpeg' ?>)">
+                                <div class="card-header mb-3 text-white text-center img-style position-relative" style="border-radius:300px 300px 0 0;height:500px;background: linear-gradient(0deg, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)),url(<?= '../assets/img/beautiful-couple-having-their-wedding-beach-1-7.jpeg' ?>)">
                                     <div class="center-bottom">
                                         <h3 class="fs-30">Where & When</h3>
                                         <h1 class="fs-50 font-playfair">Wedding Day</h1>
@@ -261,11 +285,11 @@
                                                 </div>
                                                 <div class="row mt-3">
                                                     <div class="col-12 text-center">
-                                                        <a href="#" class="btn btn-open mb-1">
+                                                        <a href="#" class="btn-main mb-1 me-2">
                                                             <i class="fa-solid fa-location-dot"></i>
                                                             Open Map
                                                         </a>
-                                                        <a href="#" class="btn btn-open mb-1">
+                                                        <a href="#" class="btn-main mb-1">
                                                             <i class="fa-solid fa-calendar-days"></i>
                                                             Add to Calender
                                                         </a>
@@ -304,11 +328,11 @@
                                                 </div>
                                                 <div class="row mt-3">
                                                     <div class="col-12 text-center">
-                                                        <a href="#" class="btn btn-open mb-1">
+                                                        <a href="#" class="btn-main mb-1 me-2">
                                                             <i class="fa-solid fa-location-dot"></i>
                                                             Open Map
                                                         </a>
-                                                        <a href="#" class="btn btn-open mb-1">
+                                                        <a href="#" class="btn-main mb-1">
                                                             <i class="fa-solid fa-calendar-days"></i>
                                                             Add to Calender
                                                         </a>
@@ -327,7 +351,7 @@
                                                 </div>
                                             </div>
                                             <p>We will broadcast the wedding ceremony virtually</p>
-                                            <a href="#" class="btn btn-open mb-1">
+                                            <a href="#" class="btn-main mb-1">
                                                 <i class="fa-solid fa-video"></i>
                                                 Join
                                             </a>
@@ -341,6 +365,7 @@
             </div>
         </div>
     </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -371,6 +396,33 @@
     setInterval(function() { makeTimer(); }, 1000);
     </script>
 
+<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+         <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 30,
+                nav: false,
+                loop: false,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 2
+                  },
+                  1000: {
+                    items: 4
+                  }
+                }
+              })
+            })
+         </script>
+
+    <section id="div-journey">
     <div class="container-fluid" style="background-color:#d2b591;padding-top:100px;padding-bottom:100px">
         <div class="container">
             <div class="row">
@@ -380,133 +432,68 @@
                     <p>How it all started</p>
                 </div>
             </div>
-
-            <!-- CAROUSEL -->
-    <link rel="stylesheet" href="<?= '../assets/css/owl.carousel.min.css' ?>">
-    <link rel="stylesheet" href="<?= '../assets/css/owl.theme.default.css' ?>">
-    <script src="<?= '../assets/js/owl.carousel.min.js' ?>"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
-    </script>
         
-        
-<div class="row mt-5">
-  <div class="col-lg-12">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme">
 
-    <div class="horizontal-timeline">
-        <ul class="list-inline items">
-            <?php 
-            $love_story = [
-                [
-                    'tanggal' => '01 Januari 2019',
-                    'img' => 'beautiful-couple-having-their-wedding-beach-2-13.jpeg',
-                    'judul' => 'Awal Bertemu',
-                    'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
-                ],
-                [
-                    'tanggal' => '02 Februari 2020',
-                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
-                    'judul' => 'Meminta Restu Orang Tua',
-                    'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
-                ],
-                [
-                    'tanggal' => '03 Maret 2021',
-                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
-                    'judul' => 'Lamaran',
-                    'deskripsi' => 'Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
-                ],
-                [
-                    'tanggal' => '04 Juni 2022',
-                    'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
-                    'judul' => 'Akad Nikah',
-                    'deskripsi' => 'Lorem ipsum dolor sit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
-                ],
-            ];
-            
-            foreach ($love_story as $v) : 
-            ?>
-            <li class="list-inline-item items-list">
-                <div class="px-4">
-                    <div class="event-date badge" style="background:#9b8770"><?= $v['tanggal'] ?></div>
-                    <div class="card text-white p-2" style="background-color:#c2ad93">
-                        <img src="<?= '../assets/img/'.$v['img'] ?>" class="img-style w-100" style="height:10vw" alt="">
-                        <h5 class="pt-2"><?= $v['judul'] ?></h5>
-                        <span><?= $v['deskripsi'] ?></span>
+                        <?php 
+                            $love_story = [
+                            [
+                                'tanggal' => '01 Januari 2019',
+                                'img' => 'beautiful-couple-having-their-wedding-beach-2-13.jpeg',
+                                'judul' => 'Awal Bertemu',
+                                'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                            ],
+                            [
+                                'tanggal' => '02 Februari 2020',
+                                'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                                'judul' => 'Meminta Restu Orang Tua',
+                                'deskripsi' => 'Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                            ],
+                            [
+                                'tanggal' => '03 Maret 2021',
+                                'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                                'judul' => 'Lamaran',
+                                'deskripsi' => 'Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                            ],
+                            [
+                                'tanggal' => '04 Juni 2022',
+                                'img' => 'beautiful-couple-having-their-wedding-beach-3-5.jpeg',
+                                'judul' => 'Akad Nikah',
+                                'deskripsi' => 'Lorem ipsum dolor sit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.',
+                            ],
+                        ];
+                        foreach ($love_story as $v) : 
+                        ?>
+                        <div class="">
+                            <div class="text-center">
+                                <div class="badge bg-main">
+                                    <label class="fs-16"><?= $v['tanggal'] ?></label>
+                                </div>
+                            </div>
+                            <hr style="border-top:5px solid #fff;width:110%" class="mb-0">
+                            <div class="text-center c-main">
+                                &#9551;
+                            </div>
+                            <div class="card text-white p-2 bg-main">
+                                <img src="<?= '../assets/img/'.$v['img'] ?>" class="img-style w-100" style="height:150px" alt="">
+                                <h5 class="pt-2"><?= $v['judul'] ?></h5>
+                                <span><?= $v['deskripsi'] ?></span>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-            </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-
-  </div>
-</div>
-
+            </div>
 
         </div>
     </div>
-
-    <style>
-.horizontal-timeline .items {
-  border-top: 3px solid #e9ecef;
-}
-
-.horizontal-timeline .items .items-list {
-  display: block;
-  position: relative;
-  text-align: center;
-  padding-top: 70px;
-  margin-right: 0;
-}
-
-.horizontal-timeline .items .items-list:before {
-  content: "";
-  position: absolute;
-  height: 36px;
-  border-right: 2px dashed #dee2e6;
-  top: 0;
-}
-
-.horizontal-timeline .items .items-list .event-date {
-  position: absolute;
-  top: 36px;
-  left: 0;
-  right: 0;
-  width: 50%;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  padding-top: 8px;
-}
-
-@media (min-width: 1140px) {
-  .horizontal-timeline .items .items-list {
-    display: inline-block;
-    width: 24%;
-    padding-top: 45px;
-  }
-
-  .horizontal-timeline .items .items-list .event-date {
-    top: -40px;
-  }
-}
-    </style>
+    </section>
 
 
+
+    <section id="div-gallery">
     <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
         <div class="container">
             <div class="row">
@@ -551,23 +538,215 @@
         </div>
     </div>
 
-    <div id="lightbox" class="modal" style="background-color: rgba(0, 0, 0, 0.8)">
-        
-        <span class="close pointer" onclick="closeLightbox()">&times;</span>
-        <div class="w-80 center">
-            <?php foreach ($gallery as $v) : ?>
-            <div class="slide">
-                <img src="<?= '../assets/img/'.$v['name'] ?>" class="w-100 img-style" style="height:40vw" alt="" />
-            </div>
-            <?php endforeach; ?>
+    </section>
 
-            <div class="div-relative">
-                <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+
+    <section>
+    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-color:#d2b591">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4>This event will be held using</h4>
+                    <h1 class="font-playfair fs-50 mb-3">Health Protocol</h1>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                        <div class="offset-lg-2 col-lg-2 offset-lg-2 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-2.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">Wear Masker</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-6.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">Use Soap</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-7.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">Washing Hand</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="offset-lg-2 col-lg-2 offset-lg-2 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-5.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">Avoid the Crowds</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-4.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">Use Hand Sanitizer</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-4">
+                            <img src="<?= '../assets/img/Asset-3.png' ?>" class="img-100 img-style" alt="" />
+                            <p class="mt-1">No Hand Shake</p>
+                        </div>
+                    </div>
+        </div>
+    </div> 
+    </section>
+
+
+    <section id="div-rsvp">
+    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-image:url(<?= '../assets/img/white-art-paper-background.jpg' ?>)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="font-playfair fs-50 mb-3">RSVP</h1>
+                    <span>Please Confirm Your Attendance</span>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="offset-lg-2 offset-lg-2 col-lg-8 col-md-12 col-12">
+                    <div class="card p-3">
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan namamu">
+                            </div>
+                            <div class="mb-3">
+                                <label for="kehadiran" class="form-label">Kehadiran</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" name="kehadiran" role="switch" id="kehadiran" checked onclick="validate()">
+                                    <label class="form-check-label" for="kehadiran" id="statusKehadiran">Hadir</label>
+                                </div>
+                                <script>
+                                    function validate(){
+                                    if (document.getElementById('kehadiran').checked){
+                                            document.getElementById('statusKehadiran').innerHTML = 'Hadir';
+                                        } else {
+                                            document.getElementById('statusKehadiran').innerHTML = 'Tidak Hadir';
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <button type="submit" class="btn-main">
+                                <i class="fa-solid fa-paper-plane me-1"></i>
+                                Kirim
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="font-playfair fs-50 mb-3 mt-5">Make a Wish</h1>
+                    <span>It is an honor and pleasure for us, if you can attend and give us your blessing</span>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="offset-lg-2 offset-lg-2 col-lg-8 col-md-12 col-12">
+                    <div class="card p-3">
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan namamu">
+                            </div>
+                            <div class="mb-3">
+                                <label for="deskripsi" class="form-label">Ucapan & Doa</label>
+                                <textarea class="form-control" id="deskripsi" rows="3" placeholder="Semoga pernikahan kalian sakinah mawadah warohmah ya😊"></textarea>
+                            </div>
+                            <button type="submit" class="btn-main">
+                                <i class="fa-solid fa-paper-plane me-1"></i>
+                                Kirim
+                            </button>
+                        </form>
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span>Fatwa Aulia</span>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <span>01 Januari 2022 19:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, veritatis. Ipsum corporis voluptatibus optio beatae incidunt corrupti tempora placeat magni, non, aperiam quaerat sequi accusamus deleniti. Quam, voluptatibus. Laboriosam, illum!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="div-gift">
+    <div class="container-fluid" style="padding-top:100px;padding-bottom:100px;background-color:#d2b591">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="font-playfair fs-50 mb-3">Send Gift</h1>
+                    <p>Your prayers & blessings at our wedding is enough as a gift, but if you want to give more, we are happy to receive it and it will complement our happiness even more</p>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="offset-lg-1 col-lg-5 offset-lg-1 col-md-6 col-6">
+                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="img-100 img-style" alt="" />
+                    <h3 class="mt-1">TF Bank</h3>
+                    <button class="btn-main">
+                        Buka
+                    </button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-6">
+                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="img-100 img-style" alt="" />
+                    <h3 class="mt-1">Top Up</h3>
+                    <button class="btn-main">
+                        Buka
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-lg-12 text-center">
+                    <img src="<?= '../assets/img/icon-gift.png' ?>" class="img-100 img-style" alt="" />
+                    <h3 class="mt-1">Kirim Kado</h3>
+                    <p>
+                        Jl. Diponegoro No. 61 Genteng Banyuwangi 68465 <br>
+                        Aselole Aselole<br>
+                        08123456789
+                
+                    </p>
+                    <button class="btn-main">
+                        <i class="fa-regular fa-clone me-1"></i>
+                        Salin Alamat
+                    </button>
+                </div>
             </div>
 
         </div>
+    </div> 
+    </section>
+
+    
+    <section>
+    <div class="container-fluid img-style p-0 position-relative">
+        <div class="img-style" style="height:100vh;background: linear-gradient(0deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(<?= '../assets/img/bride-groom-having-their-wedding-beach-10.jpeg' ?>)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
+                        <h4>Thank You</h4>
+                        <h1 class="my-5 fs-70 font-playfair">Romeo & Juliet</h1>
+                        <h3>The Big Family of</h3>
+                        <span>Bapak Rudi Handoko & Ibu Nur Aini Azizah</span> <br>
+                        <span>Bapak Agus Haidori & Ibu Sulistiana</span>
+
+                        <div class="mt-5">
+                            <img src="<?= '../assets/img/logo-nikahnesia-white-v2.png' ?>" class="img-style" style="height:100px" alt="" />
+                            <p class="mt-3">Made with ❤️ by Nikahnesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
+    </section>
+
 
 
 
@@ -575,113 +754,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-<!-- LIGHTBOX -->
-<style>
-.slide {
-  display: none;
-}
-
-img.active{
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.previous,
-.next {
-  cursor: pointer;
-  position: absolute;
-  bottom: 50%;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-</style>
-
-
-
-<script>
-    
-var slideIndex = 1;
-showSlide(slideIndex);
-
-function openLightbox() {
-  document.getElementById('lightbox').style.display = 'block';
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-}
-
-function changeSlide(n) {
-	showSlide(slideIndex += n);
-}
-
-function toSlide(n) {
-	showSlide(slideIndex = n);
-}
-
-function showSlide(n) {
-
-  const slides = document.getElementsByClassName('slide');
-
-  if (n > slides.length) {
-    slideIndex = 1;	
-  }
-  
-  if (n < 1) {
-  	slideIndex = slides.length;
-  }
-
-  for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  
-  
-  slides[slideIndex - 1].style.display = 'block';
-}
-</script>

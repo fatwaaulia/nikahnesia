@@ -12,27 +12,6 @@
     font-family: 'Playfair Display', serif!important;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    height:10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius:15px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #696cff;
-}
-
 /* SETTING */
 h1,h2,h3,h4,h5,h6,p,span,a,div,button,label {
     font-family: 'Poppins', sans-serif!important;
