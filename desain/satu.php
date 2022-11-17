@@ -137,7 +137,6 @@
         color:#fff;
         border:2px solid #fff;
     }
-    /* END CORE */
     
     .socmed {
         filter: grayscale(100%);
