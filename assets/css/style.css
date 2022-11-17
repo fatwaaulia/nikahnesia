@@ -5,7 +5,6 @@
 /* FONT AWESOME ICON */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
-
 .font-playfair {
     font-family: 'Playfair Display', serif!important;
 }
@@ -44,9 +43,22 @@ a {
 /* FONT-SIZE */
 .fs-12 { font-size: 12px; } .fs-14 { font-size: 14px; } .fs-16 { font-size: 16px; } .fs-18 { font-size: 18px; } .fs-20 { font-size: 20px; } .fs-22 { font-size: 22px; } .fs-24 { font-size: 24px; } .fs-26 { font-size: 26px; } .fs-28 { font-size: 28px; } .fs-30 { font-size: 30px; } .fs-32 { font-size: 32px; } .fs-34 { font-size: 34px; } .fs-36 { font-size: 36px; } .fs-38 { font-size: 38px; } .fs-40 { font-size: 40px; } .fs-42 { font-size: 42px; } .fs-44 { font-size: 44px; } .fs-46 { font-size: 46px; } .fs-48 { font-size: 48px; } .fs-50 { font-size: 50px; } .fs-52 { font-size: 52px; } .fs-54 { font-size: 54px; } .fs-56 { font-size: 56px; } .fs-58 { font-size: 58px; } .fs-60 { font-size: 60px; } .fs-62 { font-size: 62px; } .fs-64 { font-size: 64px; } .fs-66 { font-size: 66px; } .fs-68 { font-size: 68px; } .fs-70 { font-size: 70px; } .fs-72 { font-size: 72px; } .fs-74 { font-size: 74px; } .fs-76 { font-size: 76px; } .fs-78 { font-size: 78px; } .fs-80 { font-size: 80px; } .fs-82 { font-size: 82px; } .fs-84 { font-size: 84px; } .fs-86 { font-size: 86px; } .fs-88 { font-size: 88px; } .fs-90 { font-size: 90px; } .fs-92 { font-size: 92px; } .fs-94 { font-size: 94px; } .fs-96 { font-size: 96px; } .fs-98 { font-size: 98px; } .fs-100 { font-size: 100px; }
 
-/* WIDTH */
-.w-80 {
-    width: 80%;
+/* WIDTH HEIGHT */
+.wh-40 {
+    width: 40px!important;
+    height: 40px!important;
+}
+.wh-50 {
+    width: 50px!important;
+    height: 50px!important;
+}
+.wh-100 {
+    width: 100px!important;
+    height: 100px!important;
+}
+.wh-150 {
+    width: 150px!important;
+    height: 150px!important;
 }
 
 /* MEDIA */
@@ -75,19 +87,48 @@ a {
 }
 .dark-hover img {
     display: block;
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 .dark-hover img:hover {
-	opacity: .5;
+    opacity: .5;
 }
 
+.form-control:focus, .form-check-input:focus {
+    border-color: #9b8770;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(194, 173, 147, 0.6);
+}
 
+.c-main {
+    color: #9b8770!important;
+}
+.bg-main {
+    background-color: #9b8770!important;
+}
 
+.btn-main {
+    background-color:#9b8770;
+    color:#fff;
+    border-radius:50px;
+    border:2px solid #9b8770;
+    padding: 8px 24px;
+}
+.btn-main:hover {
+    background-color:#c2ad93;
+    color:#fff;
+    border:2px solid #9b8770;
+}
 
-
-
-
-
-
+.btn-outline-open {
+    background-color:#fff;
+    color:#000;
+    border-radius:50px;
+    border:2px solid #fff;
+    padding: 10px 20px;
+}
+.btn-outline-open:hover {
+    background-color:#000;
+    color:#fff;
+    border:2px solid #fff;
+}

@@ -45,23 +45,25 @@
         object-fit: cover!important;
     }
 
-    /* FONT WEIGHT */
-    .fw-500 {
-        font-weight: 500;
-    }
-    .fw-600 {
-        font-weight: 600;
-    }
-    .fw-700 {
-        font-weight: 700;
-    }
-
     /* FONT-SIZE */
     .fs-12 { font-size: 12px; } .fs-14 { font-size: 14px; } .fs-16 { font-size: 16px; } .fs-18 { font-size: 18px; } .fs-20 { font-size: 20px; } .fs-22 { font-size: 22px; } .fs-24 { font-size: 24px; } .fs-26 { font-size: 26px; } .fs-28 { font-size: 28px; } .fs-30 { font-size: 30px; } .fs-32 { font-size: 32px; } .fs-34 { font-size: 34px; } .fs-36 { font-size: 36px; } .fs-38 { font-size: 38px; } .fs-40 { font-size: 40px; } .fs-42 { font-size: 42px; } .fs-44 { font-size: 44px; } .fs-46 { font-size: 46px; } .fs-48 { font-size: 48px; } .fs-50 { font-size: 50px; } .fs-52 { font-size: 52px; } .fs-54 { font-size: 54px; } .fs-56 { font-size: 56px; } .fs-58 { font-size: 58px; } .fs-60 { font-size: 60px; } .fs-62 { font-size: 62px; } .fs-64 { font-size: 64px; } .fs-66 { font-size: 66px; } .fs-68 { font-size: 68px; } .fs-70 { font-size: 70px; } .fs-72 { font-size: 72px; } .fs-74 { font-size: 74px; } .fs-76 { font-size: 76px; } .fs-78 { font-size: 78px; } .fs-80 { font-size: 80px; } .fs-82 { font-size: 82px; } .fs-84 { font-size: 84px; } .fs-86 { font-size: 86px; } .fs-88 { font-size: 88px; } .fs-90 { font-size: 90px; } .fs-92 { font-size: 92px; } .fs-94 { font-size: 94px; } .fs-96 { font-size: 96px; } .fs-98 { font-size: 98px; } .fs-100 { font-size: 100px; }
 
-    /* WIDTH */
-    .w-80 {
-        width: 80%;
+    /* WIDTH HEIGHT */
+    .wh-40 {
+        width: 40px!important;
+        height: 40px!important;
+    }
+    .wh-50 {
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .wh-100 {
+        width: 100px!important;
+        height: 100px!important;
+    }
+    .wh-150 {
+        width: 150px!important;
+        height: 150px!important;
     }
 
     /* MEDIA */
@@ -97,56 +99,53 @@
     .dark-hover img:hover {
         opacity: .5;
     }
-    </style>    
+    
+    .form-control:focus, .form-check-input:focus {
+        border-color: #9b8770;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(194, 173, 147, 0.6);
+    }
 
-    <style>
-        .form-control:focus, .form-check-input:focus {
-            border-color: #9b8770;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(194, 173, 147, 0.6);
-        }
+    .c-main {
+        color: #9b8770!important;
+    }
+    .bg-main {
+        background-color: #9b8770!important;
+    }
 
-        /* CORE */
-        .c-main {
-            color: #9b8770!important;
-        }
-        .bg-main {
-            background-color: #9b8770!important;
-        }
+    .btn-main {
+        background-color:#9b8770;
+        color:#fff;
+        border-radius:50px;
+        border:2px solid #9b8770;
+        padding: 8px 24px;
+    }
+    .btn-main:hover {
+        background-color:#c2ad93;
+        color:#fff;
+        border:2px solid #9b8770;
+    }
 
-        .btn-main {
-            background-color:#9b8770;
-            color:#fff;
-            border-radius:50px;
-            border:2px solid #9b8770;
-            padding: 8px 24px;
-        }
-        .btn-main:hover {
-            background-color:#c2ad93;
-            color:#fff;
-            border:2px solid #9b8770;
-        }
-
-        .btn-outline-open {
-            background-color:#fff;
-            color:#000;
-            border-radius:50px;
-            border:2px solid #fff;
-            padding: 10px 20px;
-        }
-        .btn-outline-open:hover {
-            background-color:#000;
-            color:#fff;
-            border:2px solid #fff;
-        }
-        /* END CORE */
-        
-        .socmed {
-            filter: grayscale(100%);
-            transition: transform .5s ease;   
-        }
-        .socmed:hover {
-            filter: grayscale(0%);
-        }
+    .btn-outline-open {
+        background-color:#fff;
+        color:#000;
+        border-radius:50px;
+        border:2px solid #fff;
+        padding: 10px 20px;
+    }
+    .btn-outline-open:hover {
+        background-color:#000;
+        color:#fff;
+        border:2px solid #fff;
+    }
+    /* END CORE */
+    
+    .socmed {
+        filter: grayscale(100%);
+        transition: transform .5s ease;   
+    }
+    .socmed:hover {
+        filter: grayscale(0%);
+    }
     </style>
 
     <!-- JQUERY -->
@@ -180,7 +179,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
-                        <img data-aos="zoom-in" data-aos-duration="1000" src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="img-150 img-style rounded-circle mb-4" alt="">
+                        <img data-aos="zoom-in" data-aos-duration="1000" src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="wh-150 img-style rounded-circle mb-4" alt="">
                         <div data-aos="fade-up" data-aos-duration="1000">
                             <h4 class="mb-3">The Wedding of</h4>
                             <h1 class="mb-3 fs-50 font-playfair">Aang Muammar Zein & Lufita Sari Dwi Lestari</h1>
@@ -296,16 +295,16 @@
                     <div class="row">
                         <div class="col-12">
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-facebook.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-facebook.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-twitter.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-twitter.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-instagram.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-instagram.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-youtube.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-youtube.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                         </div>
                     </div>
@@ -321,16 +320,16 @@
                     <div class="row">
                         <div class="col-12">
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-facebook.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-facebook.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-twitter.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-twitter.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-instagram.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-instagram.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                             <a href="#" class="socmed">
-                                <img src="<?= '../assets/img/icon-youtube.png' ?>" class="img-style img-40 rounded-circle m-1" alt="">
+                                <img src="<?= '../assets/img/icon-youtube.png' ?>" class="img-style wh-40 rounded-circle m-1" alt="">
                             </a>
                         </div>
                     </div>
@@ -766,29 +765,29 @@
             </div>
             <div class="row text-center mt-5">
                         <div class="offset-lg-2 col-lg-2 offset-lg-2 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-2.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-2.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">Wear Masker</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-6.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-6.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">Use Soap</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-7.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-7.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">Washing Hand</p>
                         </div>
                     </div>
                     <div class="row text-center">
                         <div class="offset-lg-2 col-lg-2 offset-lg-2 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-5.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-5.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">Avoid the Crowds</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-4.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-4.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">Use Hand Sanitizer</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-4">
-                            <img src="<?= '../assets/img/Asset-3.png' ?>" class="img-100 img-style" alt="" />
+                            <img src="<?= '../assets/img/Asset-3.png' ?>" class="wh-100 img-style" alt="" />
                             <p class="mt-1">No Hand Shake</p>
                         </div>
                     </div>
@@ -927,14 +926,14 @@
             </div>
             <div class="row text-center mt-5">
                 <div class="offset-lg-1 col-lg-5 offset-lg-1 col-md-6 col-6">
-                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="img-100 img-style" alt="" />
+                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="wh-100 img-style" alt="" />
                     <h3 class="mt-1">TF Bank</h3>
                     <button class="btn-main">
                         Buka
                     </button>
                 </div>
                 <div class="col-lg-5 col-md-6 col-6">
-                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="img-100 img-style" alt="" />
+                    <img src="<?= '../assets/img/icon-envelope.png' ?>" class="wh-100 img-style" alt="" />
                     <h3 class="mt-1">Top Up</h3>
                     <button class="btn-main">
                         Buka
@@ -943,7 +942,7 @@
             </div>
             <div class="row text-center mt-5">
                 <div class="col-lg-12 text-center">
-                    <img src="<?= '../assets/img/icon-gift.png' ?>" class="img-100 img-style" alt="" />
+                    <img src="<?= '../assets/img/icon-gift.png' ?>" class="wh-100 img-style" alt="" />
                     <h3 class="mt-1">Kirim Kado</h3>
                     <p>
                         Jl. Diponegoro No. 61 Genteng Banyuwangi 68465 <br>
