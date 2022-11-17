@@ -6,15 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- BOOTSTRAP 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <style>
+    /* POPPINS FONT */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /* FONT PLAYFAIR */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /* FONT AWESOME ICON */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
-</head>
-<body>
+    .font-playfair {
+        font-family: 'Playfair Display', serif!important;
+    }
+
+    h1,h2,h3,h4,h5,h6,p,span,a,div,button,label {
+        font-family: 'Poppins', sans-serif!important;
+        /* letter-spacing: 0.3px!important; */
+    }
+    img, video, iframe {
+        border-radius: 0.25rem;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    /* IMAGE STYLE */
+    .img-style {
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position-y: center!important;
+        background-position-x: center!important;
+        object-fit: cover!important;
+    }
+
+    /* FONT WEIGHT */
+    .fw-500 {
+        font-weight: 500;
+    }
+    .fw-600 {
+        font-weight: 600;
+    }
+    .fw-700 {
+        font-weight: 700;
+    }
+
+    /* FONT-SIZE */
+    .fs-12 { font-size: 12px; } .fs-14 { font-size: 14px; } .fs-16 { font-size: 16px; } .fs-18 { font-size: 18px; } .fs-20 { font-size: 20px; } .fs-22 { font-size: 22px; } .fs-24 { font-size: 24px; } .fs-26 { font-size: 26px; } .fs-28 { font-size: 28px; } .fs-30 { font-size: 30px; } .fs-32 { font-size: 32px; } .fs-34 { font-size: 34px; } .fs-36 { font-size: 36px; } .fs-38 { font-size: 38px; } .fs-40 { font-size: 40px; } .fs-42 { font-size: 42px; } .fs-44 { font-size: 44px; } .fs-46 { font-size: 46px; } .fs-48 { font-size: 48px; } .fs-50 { font-size: 50px; } .fs-52 { font-size: 52px; } .fs-54 { font-size: 54px; } .fs-56 { font-size: 56px; } .fs-58 { font-size: 58px; } .fs-60 { font-size: 60px; } .fs-62 { font-size: 62px; } .fs-64 { font-size: 64px; } .fs-66 { font-size: 66px; } .fs-68 { font-size: 68px; } .fs-70 { font-size: 70px; } .fs-72 { font-size: 72px; } .fs-74 { font-size: 74px; } .fs-76 { font-size: 76px; } .fs-78 { font-size: 78px; } .fs-80 { font-size: 80px; } .fs-82 { font-size: 82px; } .fs-84 { font-size: 84px; } .fs-86 { font-size: 86px; } .fs-88 { font-size: 88px; } .fs-90 { font-size: 90px; } .fs-92 { font-size: 92px; } .fs-94 { font-size: 94px; } .fs-96 { font-size: 96px; } .fs-98 { font-size: 98px; } .fs-100 { font-size: 100px; }
+
+    /* WIDTH */
+    .w-80 {
+        width: 80%;
+    }
+
+    /* MEDIA */
+    @media (max-width: 576px) { 
+        .w-50 {
+            width:100%!important;
+        }
+        .fs-50 {
+            font-size: 30px;
+        }
+        .fs-30 {
+            font-size: 26px;
+        }
+        .fs-24 {
+            font-size: 20px;
+        }
+        .fs-20 {
+            font-size: 16px;
+        }
+    }
+
+    /* DARK HOVER */
+    .dark-hover{
+        background-color: #000;
+        border-radius: 0.25rem;
+    }
+    .dark-hover img {
+        display: block;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .dark-hover img:hover {
+        opacity: .5;
+    }
+    </style>    
 
     <style>
         .form-control:focus, .form-check-input:focus {
@@ -66,6 +149,12 @@
         }
     </style>
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
     <?php
         // for ($i=12; $i <=100 ; $i++) { 
         //     if ($i%2 == 0) {
@@ -83,7 +172,7 @@
     }
 </script>
 
-<div id="halaman_1" class="d-none">
+<div id="halaman_1" class="d-block">
 
     <section>
     <div class="container-fluid img-style p-0">
@@ -91,13 +180,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white position-absolute top-50 start-50 translate-middle">
-                        <img src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="img-150 img-style rounded-circle mb-4" alt="">
-                        <h4 class="mb-3">The Wedding of</h4>
-                        <h1 class="mb-3 fs-50 font-playfair">Aang Muammar Zein & Lufita Sari Dwi Lestari</h1>
-                        <p class="mb-3 fs-18">Dear Mr./ Mrs./ Ms.</p>
-                        <h3 class="mb-3"><?= $_GET['to']??'Nama Tamu' ?></h3>
-                        <p class="mb-4 fs-18">You are cordially invited to our wedding.</p>
-                        <a href="#" class="btn btn-outline-open" onclick="open_invitation()">Open Invitation</a>
+                        <img data-aos="zoom-in" data-aos-duration="1000" src="<?= '../assets/img/beautiful-couple-having-their-wedding-beach-2-13.jpeg' ?>" class="img-150 img-style rounded-circle mb-4" alt="">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h4 class="mb-3">The Wedding of</h4>
+                            <h1 class="mb-3 fs-50 font-playfair">Aang Muammar Zein & Lufita Sari Dwi Lestari</h1>
+                            <p class="mb-3 fs-18">Dear Mr./ Mrs./ Ms.</p>
+                            <h3 class="mb-3"><?= $_GET['to']??'Nama Tamu' ?></h3>
+                            <p class="mb-4 fs-18">You are cordially invited to our wedding.</p>
+                            <a href="#" class="btn btn-outline-open" onclick="open_invitation()">Open Invitation</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +198,7 @@
 
 </div>
 
-<div id="halaman_2" class="d-block position-relative">
+<div id="halaman_2" class="d-none position-relative">
 
     <section>
     <div class="container-fluid img-style p-0 position-fixed">
@@ -899,8 +990,14 @@
 
 
 
-
+    <!-- BOOTSTRAP 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
